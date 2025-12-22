@@ -18,7 +18,7 @@ git status
 git add -A
 git status
 
-# modify about.html
+#modify about.html
 
 #modify contact.html
 git status
@@ -28,7 +28,7 @@ git commit -m “added more html”
 git status
 clear
 
-# modify contact.html
+#modify contact.html
 
 Git status
 Git checkout contact.html
@@ -36,7 +36,7 @@ Git checkout -f
 Git log
 Git log -p -1 #q to quit
 
-# modify index.html
+#modify index.html
 
 Git diff
 Git add -A
@@ -44,7 +44,7 @@ Git diff --staged
 Git checkout -f
 Git status
 
-# modify index.html
+#modify index.html
 
 Git status
 git commit -a -m "skipped staging area and fixed <"
@@ -59,13 +59,25 @@ git add -A
 git rm waste.html #removes file completely
 git commit -a -m "removing waste.html"
 git status -s # shows short status
+
+# on new Project
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin < url here >
+git push origin master
+git push -u origin master
+
+# Git ignore
+
 touch .gitignore # then add file names in .gitignore to ignore that file or folder
 
-# but it ignores the the files all over the project so we can add / (eg : /logs.txt)to indicate the ignore only the files which is present in same directory
+#but it ignores the the files all over the project so we can add / (eg : /logs.txt)to indicate the ignore only the files which is present in same directory
 
-# adding .txt will ignor all files with .txt extention /.txt will ignor files wihch are in same directory
+#adding .txt will ignor all files with .txt extention /.txt will ignor files wihch are in same directory
 
-# foldername/ will ignor folder
+#foldername/ will ignor folder
 
 # Branches
 
@@ -74,17 +86,11 @@ git branch # shows all branches
 git checkout feature1 # switch branch
 git checkout master # returns to master branch
 
-# on master
-
+#on master
 git merge feature1 # merge feature1 to master
-
 git checkout -b flaskintegration # create a branch and switch to it
-
 git remote add origin https://github.com/mrgaurav77/git-study.git connect to reposotry
-
 git remote # check connected repositorys
 git remote -v # check connected repositorys links
-
 git push origin master # push the branch master
-
 git push -u origin master
